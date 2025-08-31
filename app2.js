@@ -7,13 +7,15 @@ let started =false;
 let level=0;
 
 let h2=document.querySelector("h2");
-document.addEventListener("keypress",function(){
-    if(started==false){
+function startGame() {
+    if (!started) {
         console.log("game started");
-        started=true;
+        started = true;
+        levelUp();
     }
-    levelUp();
-});
+}
+document.addEventListener("click", startGame);
+document.addEventListener("touchstart", startGame);
 
 function gameflash(btn){
     btn.classList.add("flash");
