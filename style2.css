@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    border: 10px solid black;
+    margin: 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.red {
+    background-color: #d95980;
+}
+.purple {
+    background-color: #819ff9;
+}
+.green {
+    background-color: #63aac8;
+}
+.yellow {
+    background-color: #f99b45;
+}
+
+.flash {
+    background-color: white;
+}
+.userflash {
+    background-color: green;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .btn {
+        height: 150px;
+        width: 150px;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+        margin: 0.5rem;
+        border-width: 6px;
+    }
+
+    .btn-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
